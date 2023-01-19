@@ -14,6 +14,9 @@ export default function App() {
           <h2>Exercise 1: List of Cards</h2>
           <CardList cards = {CardData}/>
         </div>
+        <div>
+          <h2>Exercise 2: UseState Plus, Minus, Reset</h2>
+        </div>
       </div>
     </Router>
   );
