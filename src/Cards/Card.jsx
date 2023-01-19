@@ -1,4 +1,4 @@
-import styles from './App.scss';
+import styles from '../App.scss';
 
 export default function Card({ id, name, color }) {
   return(

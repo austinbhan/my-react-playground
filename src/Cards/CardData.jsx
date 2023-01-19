@@ -1,4 +1,4 @@
-export const vegetables = [
+export const CardData = [
   { id: '1',
     name: 'tomato', 
     color: 'red' },
