@@ -3,6 +3,7 @@ import {
 } from 'react-router-dom';
 import styles from './App.scss';
 import CardList from './Cards/CardList';
+import ExerciseTwo from './ExerciseTwo/ExerciseTwo';
 import { CardData } from './Cards/CardData';
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
           <CardList cards = {CardData}/>
         </div>
         <div>
-          <h2>Exercise 2: UseState Plus, Minus, Reset</h2>
+          <ExerciseTwo />
         </div>
       </div>
     </Router>
