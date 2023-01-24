@@ -5,6 +5,7 @@ import styles from './App.scss';
 import CardList from './Cards/CardList';
 import ExerciseTwo from './ExerciseTwo/ExerciseTwo';
 import { CardData } from './Cards/CardData';
+import ExerciseThree from './ExerciseThree/ExerciseThree';
 
 export default function App() {
   return(
@@ -17,6 +18,9 @@ export default function App() {
         </div>
         <div>
           <ExerciseTwo />
+        </div>
+        <div>
+          <ExerciseThree />
         </div>
       </div>
     </Router>
