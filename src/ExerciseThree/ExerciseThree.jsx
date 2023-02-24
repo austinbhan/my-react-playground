@@ -3,7 +3,8 @@ import styles from '../App.scss';
 
 export default function ExerciseThree() {
 
-  const url = 'https://countryapi.herokuapp.com/countries';
+  // Change to Heroku link when backend is merged to main
+  const url = 'http://localhost:7890/countries'; 
   const [data, setData] = useState([]);
 
   async function getData() {
@@ -19,7 +20,7 @@ export default function ExerciseThree() {
   return (
     <div className={styles.ExerciseThree}>
       <h2>Exercise 3: Import API from Backend</h2>
-      <div>
+      <div className={styles.cardList}>
         {
           data.map((country, i) => {
             return <div key = {country + i} className={styles.card}>
