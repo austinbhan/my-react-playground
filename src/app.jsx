@@ -6,6 +6,7 @@ import CardList from './Cards/CardList';
 import ExerciseTwo from './ExerciseTwo/ExerciseTwo';
 import { CardData } from './Cards/CardData';
 import ExerciseThree from './ExerciseThree/ExerciseThree';
+import ExerciseFour from './ExerciseFour/ExerciseFour';
 
 export default function App() {
   return(
@@ -21,6 +22,9 @@ export default function App() {
         </div>
         <div>
           <ExerciseThree />
+        </div>
+        <div>
+          <ExerciseFour />
         </div>
       </div>
     </Router>
