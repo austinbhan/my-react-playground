@@ -14,17 +14,21 @@ export default function App() {
     <Router>
       <div className={styles.App}>
         <h1 className={styles.header}>React Exercises</h1>
-        <div>
-          <Link to="/exercise-one">
+        <div className={styles.buttonMenu}>
+          <Link className={styles.button} 
+            to="/exercise-one">
             <h2>Exercise 1</h2>
           </Link>
-          <Link to="/exercise-two">
+          <Link className={styles.button} 
+            to="/exercise-two">
             <h2>Exercise 2</h2>
           </Link>
-          <Link to="/exercise-three">
+          <Link className={styles.button} 
+            to="/exercise-three">
             <h2>Exercise 3</h2>
           </Link>
-          <Link to="/exercise-four">
+          <Link className={styles.button} 
+            to="/exercise-four">
             <h2>Exercise 4</h2>
           </Link>
         </div>
