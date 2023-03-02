@@ -13,17 +13,10 @@ export default function App() {
     <Router>
       <div className={styles.App}>
         <h1 className={styles.header}>React Exercises</h1>
-        <div>
-          <h2>Exercise 1: List of Cards</h2>
+        <div className={styles.exercises}>
           <CardList cards = {CardData}/>
-        </div>
-        <div>
           <ExerciseTwo />
-        </div>
-        <div>
           <ExerciseThree />
-        </div>
-        <div>
           <ExerciseFour />
         </div>
       </div>

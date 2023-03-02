@@ -21,9 +21,26 @@ export default function ExerciseFour() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+      <Accordion> 
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}>
+          <Typography>
+                Item 2
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            This is the item 2 description
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <h2>Exercise 4.5: Make a List of MaterialUI Accordion
+                Elements Using Map
+      </h2>
     </div>
   );
 }
+// Create a drop down list of array elements
 
 // Graph: X-axis = Name of country
 // Graph: Y-axis = Population size
