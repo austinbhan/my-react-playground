@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
-import { getAll } from '../fetch-utils/getAll'; // Fix URL
+import { getAll } from '../fetch-utils/getAll'; 
 import styles from '../App.scss';
 
 
 export default function ExerciseThree() {
-
-  // Change to Heroku link when backend is merged to main
   const [data, setData] = useState([]);
   
   async function getData() {
@@ -15,7 +13,6 @@ export default function ExerciseThree() {
   useEffect(() => {
     getData();
   }, []);
-
 
   return (
     <div className={styles.ExerciseThree}>
@@ -35,5 +32,4 @@ export default function ExerciseThree() {
       </div>
     </div>
   );
-
 }
