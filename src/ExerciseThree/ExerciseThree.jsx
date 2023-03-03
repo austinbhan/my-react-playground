@@ -1,21 +1,21 @@
 import { useState, useEffect } from 'react';
+import { getAll } from '../fetch-utils/getAll'; // Fix URL
 import styles from '../App.scss';
+
 
 export default function ExerciseThree() {
 
   // Change to Heroku link when backend is merged to main
-  const url = 'https://countryapi.herokuapp.com/countries'; 
   const [data, setData] = useState([]);
-
+  
   async function getData() {
-    const res = await fetch(url);
-    const realRes = await res.json();
-    setData(realRes);
+    getAll(setData);
   }
-
+  
   useEffect(() => {
     getData();
   }, []);
+
 
   return (
     <div className={styles.ExerciseThree}>
