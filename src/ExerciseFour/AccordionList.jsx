@@ -1,10 +1,16 @@
 import styles from '../App.scss';
+import AccordionElement from './AccordionElement';
 
-export default function AccordionList() {
+export default function AccordionList({ data }) {
   return (
     <div className={styles.accordionList}>
-      <h3>This is the accordion list</h3> 
-      {/* Map through AccordionElement Below*/}
+      {
+        data.map((item, i) => 
+          <AccordionElement
+            {...item}
+            key ={item.country + i} 
+          />)
+      }
     </div>
   );
 }

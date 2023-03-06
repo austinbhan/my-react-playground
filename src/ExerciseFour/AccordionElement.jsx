@@ -1,11 +1,18 @@
 import styles from '../App.scss';
 
-export default function AccordionElement() {
+export default function AccordionElement({ 
+  country, 
+  capitol, 
+  spoken_language, 
+  continent, 
+  population }) {
   return (
     <div className={styles.accordionElement}>
-      <h3>
-                This is one instance of an accordion element
-      </h3>
+      <div>{country}</div>
+      <div>{capitol}</div>
+      <div>{spoken_language}</div>
+      <div>{continent}</div>     
+      <div>{population}</div>     
     </div>
   );
 }
