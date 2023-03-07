@@ -1,27 +1,31 @@
 import styles from '../App.scss';
+import { Accordion, AccordionSummary, Typography } from '@mui/material';
 
 export default function AccordionElement({ 
   country, 
   capitol, 
   spoken_language, 
   continent, 
-  population }) {
+  population 
+}) {
+
   return (
     <div className={styles.accordionElement}>
-      <div>{country}</div>
-      <div>{capitol}</div>
-      <div>{spoken_language}</div>
-      <div>{continent}</div>     
-      <div>{population}</div>     
+      <div>
+        <Accordion>
+          <AccordionSummary>
+            <Typography>
+              {country}
+            </Typography>
+          </AccordionSummary>
+          <AccordionSummary>
+            {`Capitol: ${capitol}`},
+            {` Spoken Language: ${spoken_language}`},
+            {` Continent: ${continent}`},
+            {` Population ${population}`}
+          </AccordionSummary>
+        </Accordion>
+      </div>
     </div>
   );
 }
-
-// Your elements include:
-
-// id
-// country
-// capitol
-// spoken_language
-// continent
-// population

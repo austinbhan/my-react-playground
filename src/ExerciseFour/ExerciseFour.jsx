@@ -4,18 +4,12 @@ import { getAll } from '../fetch-utils/getAll';
 import { useEffect, useState } from 'react';
 
 export default function ExerciseFour() {
-  // To render API data I need
-  // UseState to store Data
-  // API fetch
-  // useEffect which will activate API fetch
-  // Map will call initial UseState
   const [data, setData] = useState([]);
 
   useEffect(() => {
     getAll(setData);
   });
   
-
   return (
     <div className={styles.ExerciseFour}>
       <h2>Exercise 4: Use MaterialUI Accordion 
@@ -24,7 +18,6 @@ export default function ExerciseFour() {
     </div>
   );
 }
-// Create a drop down list of array elements
 
 // Graph: X-axis = Name of country
 // Graph: Y-axis = Population size
