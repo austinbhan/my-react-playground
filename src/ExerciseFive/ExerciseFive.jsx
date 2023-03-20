@@ -7,7 +7,7 @@ export default function ExerciseFive() {
   
   function handleSubmit(e) {
     e.preventDefault();
-    setList([...list, userInput]); // How to make an array of pushing lists
+    setList([...list, userInput]); 
   }
   
   return(
@@ -21,6 +21,10 @@ export default function ExerciseFive() {
           value={userInput}
           onChange={e => setUserInput(e.target.value)}
         />
+
+        {/* Next Steps: Multiple Inputs will push into the array in order  */}
+
+
         <button type="submit">Submit</button>
       </form>
     </div>
