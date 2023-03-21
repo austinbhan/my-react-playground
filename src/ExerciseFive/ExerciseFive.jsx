@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import CoverLetter from './CoverLetter';
 
 export default function ExerciseFive() {
   const [list, setList] = useState([]);
@@ -14,7 +15,9 @@ export default function ExerciseFive() {
   return(
     <div>
       <h2>This is Exercise 5</h2>
-      {list}
+      <CoverLetter 
+        userInputOne = {list[0]}
+        userInputTwo = {list[1]}/>
       <form onSubmit={handleSubmit}>
         <h3>Input Form</h3>
         <input placeholder="first input"
