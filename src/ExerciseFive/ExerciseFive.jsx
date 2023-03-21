@@ -5,11 +5,11 @@ export default function ExerciseFive() {
   const [list, setList] = useState([]);
   const [userInputOne, setUserInputOne] = useState('');
   const [userInputTwo, setUserInputTwo] = useState('');
-
+  const [userInputThree, setUserInputThree] = useState('');
   
   function handleSubmit(e) {
     e.preventDefault();
-    setList([...list, userInputOne, userInputTwo]); 
+    setList([userInputOne, userInputTwo, userInputThree]); 
   }
   
   return(
@@ -17,7 +17,8 @@ export default function ExerciseFive() {
       <h2>This is Exercise 5</h2>
       <CoverLetter 
         userInputOne = {list[0]}
-        userInputTwo = {list[1]}/>
+        userInputTwo = {list[1]}
+        userInputThree = {list[2]}/>
       <form onSubmit={handleSubmit}>
         <h3>Input Form</h3>
         <input placeholder="first input"
@@ -32,9 +33,12 @@ export default function ExerciseFive() {
           onChange={e => setUserInputTwo(e.target.value)}
         />
 
-        {/* Next Steps: Multiple Inputs will push into the array in order  */}
-
-
+        <input placeholder="third input"
+          name="third input"
+          value={userInputThree}
+          onChange={e => setUserInputThree(e.target.value)}
+        />
+        
         <button type="submit">Submit</button>
       </form>
     </div>
