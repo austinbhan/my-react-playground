@@ -2,12 +2,13 @@ import { useState } from 'react';
 
 export default function ExerciseFive() {
   const [list, setList] = useState([]);
-  const [userInput, setUserInput] = useState('');
+  const [userInputOne, setUserInputOne] = useState('');
+  const [userInputTwo, setUserInputTwo] = useState('');
 
   
   function handleSubmit(e) {
     e.preventDefault();
-    setList([...list, userInput]); 
+    setList([...list, userInputOne, userInputTwo]); 
   }
   
   return(
@@ -18,8 +19,14 @@ export default function ExerciseFive() {
         <h3>Input Form</h3>
         <input placeholder="first input"
           name="first input"
-          value={userInput}
-          onChange={e => setUserInput(e.target.value)}
+          value={userInputOne}
+          onChange={e => setUserInputOne(e.target.value)}
+        />
+
+        <input placeholder="second input"
+          name="second input"
+          value={userInputTwo}
+          onChange={e => setUserInputTwo(e.target.value)}
         />
 
         {/* Next Steps: Multiple Inputs will push into the array in order  */}
