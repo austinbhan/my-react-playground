@@ -9,6 +9,7 @@ import { CardData } from './Cards/CardData';
 import ExerciseThree from './ExerciseThree/ExerciseThree';
 import ExerciseFour from './ExerciseFour/ExerciseFour';
 import ExerciseFive from './ExerciseFive/ExerciseFive';
+import ExerciseSix from './ExerciseSix/ExerciseSix';
 
 export default function App() {
   return(
@@ -36,6 +37,10 @@ export default function App() {
             to="/exercise-five">
             <h2>Exercise 5</h2>
           </Link>
+          <Link className={styles.button}
+            to="/exercise-six">
+            <h2>Exercise 6</h2>
+          </Link>
         </div>
       
         <div className={styles.exercises}>
@@ -50,6 +55,8 @@ export default function App() {
               element={<ExerciseFour />} />
             <Route path="exercise-five"
               element={<ExerciseFive />} />
+            <Route path="exercise-six"
+              element={<ExerciseSix />} />
           </Routes>
         </div>
       </div>
