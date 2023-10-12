@@ -7,16 +7,18 @@ export default function ExerciseEight() {
 
     const result = [];
     const splitSentence = input.split(' ');
+    let i = 0;
 
-    for (let i = 0; i < splitSentence.length; i++) {
+    while (i < splitSentence.length) {
       if (splitSentence[i].charAt(3) == '') {
         result.push('false');
+        i++;
       } else 
         result.push(splitSentence[i].charAt(3));
+      i++;
     } 
     return result;
   }
-
 
   return (
     <div>
