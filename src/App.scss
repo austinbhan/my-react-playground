@@ -1,0 +1,30 @@
+.App {
+    .header {
+        color: red;
+    }
+    .card {
+        background-color: pink;
+        padding: 10px;
+        border-radius: 5%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardList {
+        display: flex;
+    }
+
+    .buttonMenu {
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+    .button {
+        margin: 10px;
+        border-radius: 10%;
+        background-color: pink;
+    }
+}

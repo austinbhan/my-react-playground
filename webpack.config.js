@@ -54,7 +54,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.s?css$/,
         use: [
           {
             loader: 'style-loader',
@@ -63,7 +63,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               sourceMap: true,
-              modules: true,
+              modules: {localIdentName: '[name]__[local]__[hash:base64:5]'},
               importLoaders: 1,
             },
           },
