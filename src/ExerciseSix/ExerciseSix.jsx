@@ -1,11 +1,8 @@
-import { useEffect } from 'react';
-
 export default function ExerciseSix() {
+
   // -First Exercise-
   // Replace each space within a string with %20.
   // "John Smith" => "John%20Smith"
-  // if solved, turn problemOne into true
-  
   function spaceToString(input) {
     const array = input.split('');
     const newArray = [];
@@ -18,16 +15,19 @@ export default function ExerciseSix() {
         newArray.push('%20');
       } else return newArray;
     }
-    console.log(newArray);
+    return newArray;
   }
 
-  useEffect(() => {
-    spaceToString('Bob and Bill');
-  }, []);
+  // -Second Exercise-
+  // Check if string is a permutation of a palindrome
+  // If 'tact coa' return true
+  // because 'taco cat' and 'atco cta' are a permutation and palindrome
+
 
   return (
     <div>
       <h2>See console log for exercise results</h2>
+      Line 31: {spaceToString('Bob and Bill')};
     </div>
   );
 }
