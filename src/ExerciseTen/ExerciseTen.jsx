@@ -1,5 +1,7 @@
 export default function ExerciseTen() {
 
+  // See env variable for more information on PostgreSQL connection
+
   return (
     <div>
       <h1>This is Exercise Ten</h1>
