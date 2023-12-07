@@ -14,6 +14,7 @@ import ExerciseSeven from './ExerciseSeven/ExerciseSeven';
 import ExerciseEight from './ExerciseEight/ExerciseEight';
 import ExerciseNine from './ExerciseNine/ExerciseNine';
 import ExerciseTen from './ExerciseTen/ExerciseTen';
+import ExerciseEleven from './ExerciseEleven/ExerciseEleven';
 
 
 
@@ -63,6 +64,10 @@ export default function App() {
             to="/exercise-ten">
             <h2>Exercise 10</h2>
           </Link>
+          <Link className={styles.button}
+            to="/exercise-eleven">
+            <h2>Exercise 11</h2>
+          </Link>
         </div>
       
         <div className={styles.exercises}>
@@ -87,6 +92,8 @@ export default function App() {
               element={<ExerciseNine />} />
             <Route path={'exercise-ten'}
               element={<ExerciseTen />} />
+            <Route path={'exercise-eleven'}
+              element={<ExerciseEleven />} />
           </Routes>
         </div>
       </div>
